@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculadora IMC - Uninove</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="Leonardo Ribeiro">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x">
+	<div id="body-wrapper">
+		<header id="header" class="bg-black">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-expand-lg col-md-12 padding-small">
+						<div class="nav-brand">
+							<a href="index.html"><img src="images/logo.png"></a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section id="billboard">
+
+			<div class="slider">
+				<div class="slider-item">
+					<div class="container">
+						<div class="row">
+							<div class="text-content light offset-md-5">
+								<h2><strong class="colored">Calculadora </strong>IMC</h2>
+
+								<div class="pix_btn mt-4">
+									<a href="#imc" class="hvr-shutter-in-horizontal mt-3">Calcule seu IMC</a>
+								</div>
+							</div><!--text-content-->
+						</div>
+					</div>
+				</div><!--slider-item-->
+			</div>
+		</section><!----#billboard----->
+
+		<section class="about-us padding-medium bg-sand">
+			<div class="container">
+				<div class="row">
+					<div class="section-header text-center">
+						<h2 class="section-title pb-4">Sobre nós</h2>
+						<p>Bem-vindo ao nosso site! Aqui, dedicamo-nos a fornecer uma ferramenta simples e eficaz para monitorar sua saúde. Este site foi cuidadosamente criado com o objetivo específico de ser uma calculadora de Índice de Massa Corporal (IMC). Acreditamos que compreender e acompanhar seu IMC é essencial para uma vida saudável.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bmi-calculator padding-small" id="imc">
+			<div class="section-header text-center p-30">
+				<h2 class="section-title pb-4">Calculadora IMC</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+
+					<form action="" onsubmit="calcularIMC(event)" class="calculator-wrap d-flex flex-wrap mb-4">
+						<select class="btn-box mr-2 mb-2" required>
+							<option value="">Seu sexo<i class="icon icon-angle-down" aria-hidden="true"></i></option>
+							<option value="masculino">Masculino</option>
+							<option value="feminino">Feminino</option>
+						</select>
+						<input type="number" required name="peso" placeholder="Seu peso" id="peso" class="btn-box mr-2 mb-2">
+						<input type="number" required name="altura" placeholder="Sua altura" id="altura" class="btn-box mr-2 mb-2">
+						<div class="hvr-shutter-in-horizontal light text-center btn-box mr-2 mb-2"><button type="submit">Calcular</button></div>
+						<div class="hvr-shutter-in-horizontal light text-center btn-box mr-2 mb-2"><button type="reset">Resetar</button></div>
+						<input type="text" id="resultado" name="resultado" placeholder="Resultado" class="btn-box">
+					</form><!--calculator-wrap-->
+
+					<div class="bodymassindex text-center">
+						<h5>ÍNDICE DE MASSA CORPORAL
+						</h5>
+
+						<table class="index mt-4">
+							<tr class="text-uppercase border-bottom">
+								<th>bmi</th>
+								<th>classification</th>
+							</tr>
+							<tr>
+								<td>18-25</td>
+								<td>Peso normal
+								</td>
+							</tr>
+							<tr>
+								<td>25-30</td>
+								<td>Sobrepeso</td>
+							</tr>
+							<tr>
+								<td>30-40</td>
+								<td>Obesidade</td>
+							</tr>
+							<tr>
+								<td>40-above</td>
+								<td>Obesidade morbida</td>
+							</tr>
+						</table>
+					</div><!--bodymassindex-->
+
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonials-wrap mt-3 mb-5">
+			<div class="section-header text-center p-30">
+				<h2 class="section-title pb-4">Depoimentos</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="testimonial-slider flex-wrap d-flex mb-6">
+
+						<div class="col-md-4 testimonials-inner text-center">
+							<figure>
+								<img src="images/lucy.jpg" alt="lucy" class="authorImg img-circle">
+							</figure>
+							<p>Amei utilizar o site!</p>
+							<div class="testimonial-author">
+								<span class="name colored">Lucy Antony</span>
+							</div>
+						</div>
+
+						<div class="col-md-4 testimonials-inner text-center">
+							<figure>
+								<img src="images/michael.jpg" alt="Michael" class="authorImg img-circle">
+							</figure>
+							<p>Amei utilizar o site!</p>
+							<div class="testimonial-author">
+								<span class="name colored">Michael Smith</span>
+							</div>
+						</div>
+
+						<div class="col-md-4 testimonials-inner text-center">
+							<figure>
+								<img src="images/maria.jpg" alt="Maria" class="authorImg img-circle">
+							</figure>
+							<p>Amei utilizar o site!</p>
+							<div class="testimonial-author">
+								<span class="name colored">Maria Garcia</span>
+							</div>
+						</div>
+
+					</div><!--testimonial-slider-->
+				</div>
+			</div>
+		</section>
+
+
+		<div class="footer-bottom bg-black padding-small">
+			<div class="container">
+				<div class="row">
+					<div class="wrap flex-container align-items-center">
+						<div class="copyright">
+							<p class="mb-0">© Copyright 2023 <a href="#" target="_blank">Desenvolvido por: Leonardo Ribeiro</a>.</p>
+						</div>
+						<div class="social-links mt-3">
+							<ul class="list-unstyled d-flex">
+								<li class="mr-3"><a href="#"><i class="icon icon-facebook m-1"></i></a></li>
+								<li><a href="#"><i class="icon icon-youtube m-1"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div><!--body-wrapper-->
+
+
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

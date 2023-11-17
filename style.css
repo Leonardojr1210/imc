@@ -927,6 +927,22 @@ img.sgalleryImg {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.modal {
+  padding-top: 20%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .btn-box {
+  font-size: 1.1em;
+  width: 32%;
+  height: 45px;
+  color: white;
+  border: 1px solid #d4000d;
+  background-color: #d4000d;
+  margin: 0;
+  line-height: 2;
+}
+
 @media only screen and (max-width: 767px) {
   .wp-caption.align-right,
   .wp-caption.align-left {
@@ -938,6 +954,10 @@ img.sgalleryImg {
   .wp-caption.align-right .wp-caption-text,
   .wp-caption.align-left .wp-caption-text {
     text-align: center;
+  }
+
+  .modal .btn-box {
+    width: 50%;
   }
 }
 
